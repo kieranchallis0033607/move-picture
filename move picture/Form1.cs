@@ -26,5 +26,23 @@ namespace move_picture
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private async void Button5_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
+            await Task.Delay(500);
+            pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+            await Task.Delay(500);
+        }
     }
 }
