@@ -44,8 +44,12 @@ namespace move_picture
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 3, pictureBox1.Location.Y);
                 await Task.Delay(50);
             }
-            
-           
+            for (int i = 0; i < 100; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 3, pictureBox1.Location.Y);
+                await Task.Delay(50);
+            }
+
         }
     }
 }
