@@ -39,10 +39,13 @@ namespace move_picture
 
         private async void Button5_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
-            await Task.Delay(500);
-            pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
-            await Task.Delay(500);
+            for (int i = 0; i < 100; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 3, pictureBox1.Location.Y);
+                await Task.Delay(50);
+            }
+            
+           
         }
     }
 }
